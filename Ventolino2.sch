@@ -1,4 +1,4 @@
-EESchema Schematic File Version 5
+EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
@@ -12,11 +12,6 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
-Comment5 ""
-Comment6 ""
-Comment7 ""
-Comment8 ""
-Comment9 ""
 $EndDescr
 Wire Wire Line
 	2625 1750 3000 1750
@@ -69,17 +64,6 @@ F 3 "" H 8375 2325 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8375 2325 8375 2275
-$Comp
-L arduino:Arduino_Mega2560_Shield XA1
-U 1 1 5E138307
-P 5850 4425
-F 0 "XA1" H 5850 6914 60  0000 C CNN
-F 1 "Arduino_Mega2560_Shield" H 5850 6807 60  0000 C CNN
-F 2 "Arduino:Arduino_Mega2560_Shield_mOD" H 6550 7175 60  0001 C CNN
-F 3 "https://store.arduino.cc/arduino-mega-2560-rev3" H 6550 7175 60  0001 C CNN
-	1    5850 4425
-	1    0    0    -1  
-$EndComp
 NoConn ~ 7150 2275
 NoConn ~ 7150 2375
 Wire Wire Line
@@ -320,7 +304,7 @@ Wire Wire Line
 Wire Wire Line
 	10125 2475 10875 2475
 $Comp
-L MAX:MAX525 U4
+L Ventolino2-rescue:MAX525-MAX U4
 U 1 1 5DE8CFDD
 P 9375 2725
 F 0 "U4" H 9375 3590 50  0000 C CNN
@@ -1130,29 +1114,23 @@ NoConn ~ 4550 2575
 $Comp
 L Device:R_Small R9
 U 1 1 5E17C89B
-P 2750 4125
-F 0 "R9" H 2691 4171 50  0000 R CNN
-F 1 "10k" H 2691 4080 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2750 4125 50  0001 C CNN
-F 3 "~" H 2750 4125 50  0001 C CNN
-	1    2750 4125
+P 2750 4725
+F 0 "R9" H 2691 4771 50  0000 R CNN
+F 1 "10k" H 2691 4680 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2750 4725 50  0001 C CNN
+F 3 "~" H 2750 4725 50  0001 C CNN
+	1    2750 4725
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2000 3575 2750 3575
-Wire Wire Line
-	2125 3675 3000 3675
-Wire Wire Line
-	2250 3775 3250 3775
 $Comp
 L Device:R_Small R10
 U 1 1 5E17C54C
-P 3000 4125
-F 0 "R10" H 2941 4171 50  0000 R CNN
-F 1 "10k" H 2941 4080 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3000 4125 50  0001 C CNN
-F 3 "~" H 3000 4125 50  0001 C CNN
-	1    3000 4125
+P 3000 4725
+F 0 "R10" H 2941 4771 50  0000 R CNN
+F 1 "10k" H 2941 4680 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3000 4725 50  0001 C CNN
+F 3 "~" H 3000 4725 50  0001 C CNN
+	1    3000 4725
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1256,7 +1234,7 @@ F 3 "" H 3800 9750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MAX:MAX6225 U3
+L Ventolino2-rescue:MAX6225-MAX U3
 U 1 1 5E0262B1
 P 4800 10050
 F 0 "U3" H 4800 10615 50  0000 C CNN
@@ -1270,28 +1248,6 @@ NoConn ~ 4350 10100
 NoConn ~ 4350 9900
 NoConn ~ 5250 10000
 NoConn ~ 5250 10200
-$Comp
-L Regulator_Linear:MC78L12_TO92 U1
-U 1 1 5DE54CA2
-P 2625 1375
-F 0 "U1" H 2625 1617 50  0000 C CNN
-F 1 "MC78L12_TO92" H 2625 1526 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2625 1600 50  0001 C CIN
-F 3 "http://www.fairchildsemi.com/ds/LM/LM78L05A.pdf" H 2625 1325 50  0001 C CNN
-	1    2625 1375
-	1    0    0    -1  
-$EndComp
-$Comp
-L Regulator_Linear:LM79L12_TO92 U2
-U 1 1 5DE566E3
-P 2625 2125
-F 0 "U2" H 2625 1976 50  0000 C CNN
-F 1 "LM79L12_TO92" H 2625 1885 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-92L_Inline_Wide" H 2625 1925 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/lm79l.pdf" H 2625 2125 50  0001 C CNN
-	1    2625 2125
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2925 1375 3000 1375
 Wire Wire Line
@@ -1513,13 +1469,7 @@ Wire Wire Line
 Wire Wire Line
 	2900 5475 2900 5375
 Wire Wire Line
-	2000 3575 2000 7375
-Wire Wire Line
-	2250 3775 2250 7125
-Wire Wire Line
-	2125 7250 2125 3675
-Wire Wire Line
-	2375 3875 2375 7000
+	2125 7250 2125 3875
 Wire Wire Line
 	4550 6375 4225 6375
 Connection ~ 4225 6375
@@ -1529,7 +1479,6 @@ Wire Wire Line
 	4225 6075 4225 6375
 NoConn ~ 4550 6275
 NoConn ~ 4550 4175
-NoConn ~ 4550 4275
 NoConn ~ 4550 4375
 NoConn ~ 4550 4475
 NoConn ~ 4550 4575
@@ -1539,104 +1488,150 @@ NoConn ~ 4550 4875
 NoConn ~ 4550 4975
 NoConn ~ 4550 5075
 NoConn ~ 4550 3975
-NoConn ~ 4550 4075
 NoConn ~ 4550 3375
 NoConn ~ 4550 3275
 NoConn ~ 4550 3175
 Wire Wire Line
-	2375 3875 3500 3875
+	3250 4825 3250 5000
 Wire Wire Line
-	3250 4225 3250 4400
-Wire Wire Line
-	3000 4400 3000 4225
-Wire Wire Line
-	3000 4025 3000 3675
-Wire Wire Line
-	3250 4025 3250 3775
-Wire Wire Line
-	3500 4025 3500 3875
+	3000 5000 3000 4825
 $Comp
 L power:GND #PWR08
 U 1 1 5E189872
-P 2750 4400
-F 0 "#PWR08" H 2750 4150 50  0001 C CNN
-F 1 "GND" H 2755 4227 50  0000 C CNN
-F 2 "" H 2750 4400 50  0001 C CNN
-F 3 "" H 2750 4400 50  0001 C CNN
-	1    2750 4400
+P 2750 5000
+F 0 "#PWR08" H 2750 4750 50  0001 C CNN
+F 1 "GND" H 2755 4827 50  0000 C CNN
+F 2 "" H 2750 5000 50  0001 C CNN
+F 3 "" H 2750 5000 50  0001 C CNN
+	1    2750 5000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR032
 U 1 1 5E189B10
-P 3000 4400
-F 0 "#PWR032" H 3000 4150 50  0001 C CNN
-F 1 "GND" H 3005 4227 50  0000 C CNN
-F 2 "" H 3000 4400 50  0001 C CNN
-F 3 "" H 3000 4400 50  0001 C CNN
-	1    3000 4400
+P 3000 5000
+F 0 "#PWR032" H 3000 4750 50  0001 C CNN
+F 1 "GND" H 3005 4827 50  0000 C CNN
+F 2 "" H 3000 5000 50  0001 C CNN
+F 3 "" H 3000 5000 50  0001 C CNN
+	1    3000 5000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR033
 U 1 1 5E189E0B
-P 3250 4400
-F 0 "#PWR033" H 3250 4150 50  0001 C CNN
-F 1 "GND" H 3255 4227 50  0000 C CNN
-F 2 "" H 3250 4400 50  0001 C CNN
-F 3 "" H 3250 4400 50  0001 C CNN
-	1    3250 4400
+P 3250 5000
+F 0 "#PWR033" H 3250 4750 50  0001 C CNN
+F 1 "GND" H 3255 4827 50  0000 C CNN
+F 2 "" H 3250 5000 50  0001 C CNN
+F 3 "" H 3250 5000 50  0001 C CNN
+	1    3250 5000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR034
 U 1 1 5E18A076
-P 3500 4400
-F 0 "#PWR034" H 3500 4150 50  0001 C CNN
-F 1 "GND" H 3505 4227 50  0000 C CNN
-F 2 "" H 3500 4400 50  0001 C CNN
-F 3 "" H 3500 4400 50  0001 C CNN
-	1    3500 4400
+P 3500 5000
+F 0 "#PWR034" H 3500 4750 50  0001 C CNN
+F 1 "GND" H 3505 4827 50  0000 C CNN
+F 2 "" H 3500 5000 50  0001 C CNN
+F 3 "" H 3500 5000 50  0001 C CNN
+	1    3500 5000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3500 4225 3500 4400
+	3500 4825 3500 5000
 Wire Wire Line
-	2750 4225 2750 4400
-Wire Wire Line
-	2750 4025 2750 3575
-Connection ~ 2750 3575
-Connection ~ 3000 3675
-Connection ~ 3250 3775
+	2750 4825 2750 5000
 $Comp
 L Device:R_Small R11
 U 1 1 5E17C1CD
-P 3250 4125
-F 0 "R11" H 3191 4171 50  0000 R CNN
-F 1 "10k" H 3191 4080 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3250 4125 50  0001 C CNN
-F 3 "~" H 3250 4125 50  0001 C CNN
-	1    3250 4125
+P 3250 4725
+F 0 "R11" H 3191 4771 50  0000 R CNN
+F 1 "10k" H 3191 4680 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3250 4725 50  0001 C CNN
+F 3 "~" H 3250 4725 50  0001 C CNN
+	1    3250 4725
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2750 3575 4550 3575
-Wire Wire Line
-	3000 3675 4550 3675
-Wire Wire Line
-	3250 3775 4550 3775
-Connection ~ 3500 3875
-Wire Wire Line
-	3500 3875 4550 3875
 $Comp
 L Device:R_Small R12
 U 1 1 5E18B6CF
-P 3500 4125
-F 0 "R12" H 3441 4171 50  0000 R CNN
-F 1 "10k" H 3441 4080 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3500 4125 50  0001 C CNN
-F 3 "~" H 3500 4125 50  0001 C CNN
-	1    3500 4125
+P 3500 4725
+F 0 "R12" H 3441 4771 50  0000 R CNN
+F 1 "10k" H 3441 4680 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3500 4725 50  0001 C CNN
+F 3 "~" H 3500 4725 50  0001 C CNN
+	1    3500 4725
 	1    0    0    -1  
 $EndComp
+$Comp
+L Regulator_Linear:L78L12_SOT89 U1
+U 1 1 5F6470B0
+P 2625 1375
+F 0 "U1" H 2625 1617 50  0000 C CNN
+F 1 "L78L12_SOT89" H 2625 1526 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-89-3" H 2625 1575 50  0001 C CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 2625 1325 50  0001 C CNN
+	1    2625 1375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:L79L12_SOT89 U2
+U 1 1 5F64872B
+P 2625 2125
+F 0 "U2" H 2625 1976 50  0000 C CNN
+F 1 "L79L12_SOT89" H 2625 1885 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-89-3" H 2625 1925 50  0001 C CIN
+F 3 "http://www.farnell.com/datasheets/1827870.pdf" H 2625 2125 50  0001 C CNN
+	1    2625 2125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Ventolino2-rescue:Arduino_Mega2560_Shield-arduino XA1
+U 1 1 5E138307
+P 5850 4425
+F 0 "XA1" H 5850 6914 60  0000 C CNN
+F 1 "Arduino_Mega2560_Shield" H 5850 6807 60  0000 C CNN
+F 2 "Arduino:Arduino_Mega2560_Shield_mOD" H 6550 7175 60  0001 C CNN
+F 3 "https://store.arduino.cc/arduino-mega-2560-rev3" H 6550 7175 60  0001 C CNN
+	1    5850 4425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2375 4275 3500 4275
+Wire Wire Line
+	2375 4275 2375 7000
+Wire Wire Line
+	4550 4075 3250 4075
+Wire Wire Line
+	2250 4075 2250 7125
+Wire Wire Line
+	4550 3675 2750 3675
+Wire Wire Line
+	2000 3675 2000 7375
+Wire Wire Line
+	2750 4625 2750 3675
+Connection ~ 2750 3675
+Wire Wire Line
+	2750 3675 2000 3675
+Wire Wire Line
+	2125 3875 3000 3875
+Wire Wire Line
+	3000 4625 3000 3875
+Connection ~ 3000 3875
+Wire Wire Line
+	3000 3875 4550 3875
+Wire Wire Line
+	3250 4625 3250 4075
+Connection ~ 3250 4075
+Wire Wire Line
+	3250 4075 2250 4075
+Wire Wire Line
+	3500 4625 3500 4275
+Connection ~ 3500 4275
+Wire Wire Line
+	3500 4275 4550 4275
+NoConn ~ 4550 3775
+NoConn ~ 4550 3575
 $EndSCHEMATC

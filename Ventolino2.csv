@@ -1,0 +1,17 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"U2";"SOT-89-3";1;"L79L12_SOT89";;;
+2;"U1";"SOT-89-3";1;"L78L12_SOT89";;;
+3;"J1";"RS_Screw_Term_x3";1;"Screw_Terminal_01x03";;;
+4;"XA1";"Arduino_Mega2560_Shield_mOD";1;"Arduino_Mega2560_Shield";;;
+5;"U5";"DIP-14_W7.62mm_Socket";1;"LM324";;;
+6;"U4";"DIP-20_W7.62mm_Socket";1;"MAX525";;;
+7;"U3";"DIP-8_W7.62mm_Socket";1;"MAX6225";;;
+8;"R12,R11,R10,R9,R8,R7,R6,R5,R4,R3,R2,R1";"R_0603_1608Metric_Pad1.05x0.95mm_HandSolder";12;"10k";;;
+9;"JP1";"PinHeader_1x02_P2.54mm_Vertical";1;"Jumper_NC_Small";;;
+10;"J5,J4,J3,J2";"IDC_05x02";4;"Conn_01x10";;;
+11;"D2,D1";"D_0603_1608Metric_Pad1.05x0.95mm_HandSolder";2;"1N4001";;;
+12;"C11,C10,C8,C4,C3";"C_0603_1608Metric_Pad1.05x0.95mm_HandSolder";5;"100n";;;
+13;"C9";"C_0603_1608Metric_Pad1.05x0.95mm_HandSolder";1;"4u7";;;
+14;"C7";"C_0603_1608Metric_Pad1.05x0.95mm_HandSolder";1;"10u";;;
+15;"C6,C5";"C_0603_1608Metric_Pad1.05x0.95mm_HandSolder";2;"2u2";;;
+16;"C2,C1";"C_0603_1608Metric_Pad1.05x0.95mm_HandSolder";2;"330n";;;

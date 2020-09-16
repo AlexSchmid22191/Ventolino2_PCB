@@ -1,4 +1,4 @@
-EESchema Schematic File Version 5
+EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
@@ -12,11 +12,6 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
-Comment5 ""
-Comment6 ""
-Comment7 ""
-Comment8 ""
-Comment9 ""
 $EndDescr
 Wire Wire Line
 	2625 1750 3000 1750
@@ -70,7 +65,7 @@ $EndComp
 Wire Wire Line
 	8375 2325 8375 2275
 $Comp
-L arduino:Arduino_Mega2560_Shield XA1
+L Ventolino2-rescue:Arduino_Mega2560_Shield-arduino XA1
 U 1 1 5E138307
 P 5850 4425
 F 0 "XA1" H 5850 6914 60  0000 C CNN
@@ -320,7 +315,7 @@ Wire Wire Line
 Wire Wire Line
 	10125 2475 10875 2475
 $Comp
-L MAX:MAX525 U4
+L Ventolino2-rescue:MAX525-MAX U4
 U 1 1 5DE8CFDD
 P 9375 2725
 F 0 "U4" H 9375 3590 50  0000 C CNN
@@ -1256,7 +1251,7 @@ F 3 "" H 3800 9750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MAX:MAX6225 U3
+L Ventolino2-rescue:MAX6225-MAX U3
 U 1 1 5E0262B1
 P 4800 10050
 F 0 "U3" H 4800 10615 50  0000 C CNN
@@ -1270,28 +1265,6 @@ NoConn ~ 4350 10100
 NoConn ~ 4350 9900
 NoConn ~ 5250 10000
 NoConn ~ 5250 10200
-$Comp
-L Regulator_Linear:MC78L12_TO92 U1
-U 1 1 5DE54CA2
-P 2625 1375
-F 0 "U1" H 2625 1617 50  0000 C CNN
-F 1 "MC78L12_TO92" H 2625 1526 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2625 1600 50  0001 C CIN
-F 3 "http://www.fairchildsemi.com/ds/LM/LM78L05A.pdf" H 2625 1325 50  0001 C CNN
-	1    2625 1375
-	1    0    0    -1  
-$EndComp
-$Comp
-L Regulator_Linear:LM79L12_TO92 U2
-U 1 1 5DE566E3
-P 2625 2125
-F 0 "U2" H 2625 1976 50  0000 C CNN
-F 1 "LM79L12_TO92" H 2625 1885 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-92L_Inline_Wide" H 2625 1925 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/lm79l.pdf" H 2625 2125 50  0001 C CNN
-	1    2625 2125
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2925 1375 3000 1375
 Wire Wire Line
@@ -1637,6 +1610,28 @@ F 1 "10k" H 3441 4080 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3500 4125 50  0001 C CNN
 F 3 "~" H 3500 4125 50  0001 C CNN
 	1    3500 4125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:L78L12_SOT89 U1
+U 1 1 5F6470B0
+P 2625 1375
+F 0 "U1" H 2625 1617 50  0000 C CNN
+F 1 "L78L12_SOT89" H 2625 1526 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-89-3" H 2625 1575 50  0001 C CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 2625 1325 50  0001 C CNN
+	1    2625 1375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:L79L12_SOT89 U2
+U 1 1 5F64872B
+P 2625 2125
+F 0 "U2" H 2625 1976 50  0000 C CNN
+F 1 "L79L12_SOT89" H 2625 1885 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-89-3" H 2625 1925 50  0001 C CIN
+F 3 "http://www.farnell.com/datasheets/1827870.pdf" H 2625 2125 50  0001 C CNN
+	1    2625 2125
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
